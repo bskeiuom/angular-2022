@@ -9,6 +9,11 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
 import { MissioncontrolComponent } from './missioncontrol/missioncontrol.component';
 import { AstronautComponent } from './astronaut/astronaut.component';
 import { MissionService } from './mission.service';
+import { AdBannerComponent } from './ad-banner/ad-banner.component';
+import { HeroJobAdComponent } from './hero-job-ad/hero-job-ad.component';
+import { HeroProfileComponent } from './hero-profile/hero-profile.component';
+import { AdDirective } from '../ad.directive';
+import { AdService } from './ad.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -19,8 +24,12 @@ import { MissionService } from './mission.service';
     CountdownTimerComponent,
     MissioncontrolComponent,
     AstronautComponent,
+    AdBannerComponent,
+    HeroJobAdComponent,
+    HeroProfileComponent,
+    AdDirective,
   ],
-  providers: [MissionService],
+  providers: [MissionService, AdService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
