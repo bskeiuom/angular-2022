@@ -1,10 +1,11 @@
 import {
-  AfterViewInit,
   Component,
-  OnDestroy,
   Input,
+  OnDestroy,
+  AfterViewInit,
   ViewChild,
 } from '@angular/core';
+
 import { AdDirective } from '../../ad.directive';
 import { AdItem } from '../ad-item';
 import { AdComponent } from '../ad.component';
@@ -12,12 +13,11 @@ import { AdComponent } from '../ad.component';
 @Component({
   selector: 'app-ad-banner',
   template: `
-  <div class="ad-banner-example">
-    <h3>Advertisements</h3>
-    <ng-template adHost></ng-template>
-  </div>
-`,
-  styleUrls: ['./ad-banner.component.css'],
+    <div class="ad-banner-example">
+      <h3>Advertisements</h3>
+      <ng-template adHost></ng-template>
+    </div>
+  `,
 })
 export class AdBannerComponent implements AfterViewInit, OnDestroy {
   @Input() ads: AdItem[] = [];
@@ -55,3 +55,9 @@ export class AdBannerComponent implements AfterViewInit, OnDestroy {
     }, 3000);
   }
 }
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
