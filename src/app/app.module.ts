@@ -14,6 +14,8 @@ import { HeroJobAdComponent } from './hero-job-ad/hero-job-ad.component';
 import { HeroProfileComponent } from './hero-profile/hero-profile.component';
 import { AdDirective } from '../ad.directive';
 import { AdService } from './ad.service';
+import { PopupService } from './popup.service';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -28,8 +30,9 @@ import { AdService } from './ad.service';
     HeroJobAdComponent,
     HeroProfileComponent,
     AdDirective,
+    PopupComponent
   ],
-  providers: [MissionService, AdService],
+  providers: [MissionService, AdService, PopupService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

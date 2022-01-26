@@ -13,4 +13,8 @@
 <!-- access child component using ViewChild-->
 
 <!-- <app-missioncontrol> </app-missioncontrol> -->
-<app-ad-banner [ads]="ads"></app-ad-banner>
+<!-- <app-ad-banner [ads]="ads"></app-ad-banner> -->
+
+<input #input value="Message" />
+<button (click)="popup.showAsComponent(input.value)">Show as component</button>
+<button (click)="popup.showAsElement(input.value)">Show as element</button>
