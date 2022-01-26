@@ -46,7 +46,7 @@ export class PopupService {
   showAsElement(message: string) {
     // Create element
     const popupEl: NgElement & WithProperties<PopupComponent> =
-      document.createElement('popup-element') as any;
+      document.createElement('popup-element121') as any;
 
     // Listen to the close event
     popupEl.addEventListener('closed', () => {

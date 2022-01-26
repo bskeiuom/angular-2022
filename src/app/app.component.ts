@@ -18,14 +18,16 @@ export class AppComponent implements AfterViewInit, OnInit {
 
   ads: AdItem[] = [];
 
-  constructor(private adService: AdService,
-              injector: Injector, public popup: PopupService) 
-            {
-              // Convert 'PopupComponent' to a custom element.
-              const PopupElement = createCustomElement(PopupComponent, {injector});
-              // Register the custom element with the browser.
-              customElements.define('popup-element', PopupElement);
-            }
+  constructor(
+    private adService: AdService,
+    injector: Injector,
+    public popup: PopupService
+  ) {
+    // Convert 'PopupComponent' to a custom element.
+    const PopupElement = createCustomElement(PopupComponent, { injector });
+    // Register the custom element with the browser.
+    customElements.define('popup-element121', PopupElement);
+  }
 
   @ViewChild(CountdownTimerComponent)
   private timerComponent!: CountdownTimerComponent;
