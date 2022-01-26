@@ -16,9 +16,10 @@ import { AdDirective } from '../ad.directive';
 import { AdService } from './ad.service';
 import { PopupService } from './popup.service';
 import { PopupComponent } from './popup/popup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, BrowserAnimationsModule],
   declarations: [
     AppComponent,
     HelloComponent,
@@ -30,7 +31,7 @@ import { PopupComponent } from './popup/popup.component';
     HeroJobAdComponent,
     HeroProfileComponent,
     AdDirective,
-    PopupComponent
+    PopupComponent,
   ],
   providers: [MissionService, AdService, PopupService],
   bootstrap: [AppComponent],
