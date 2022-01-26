@@ -2,7 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-countdown-timer',
-  templateUrl: './countdown-timer.component.html',
+  template: '',
   styleUrls: ['./countdown-timer.component.css'],
 })
 export class CountdownTimerComponent implements OnDestroy {
